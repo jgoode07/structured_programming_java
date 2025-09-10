@@ -1,3 +1,13 @@
+/*************************************************
+ * DiscountSystem.java
+ * Author: Joe Goode
+ *
+ * This program calculates an employee's discount 
+ * based on their job title and item price. It 
+ * includes input validation and discount logic 
+ * using if statements and a switch.
+ **************************************************/
+
 import java.util.Scanner;
 
 public class DiscountSystem {
