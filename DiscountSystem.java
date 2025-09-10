@@ -13,6 +13,18 @@ public class DiscountSystem {
             return;    
         }
         double discountRate = 0.0;
+
+        switch (jobTitle.toLowerCase()) {
+            case "supervisor":
+                discountRate = 0.10;
+                break;
+            case "sales representative":
+                discountRate = 0.15;
+                break;
+            default:
+                discountRate = 0.20;
+                break;
+        }
     }
 }
 
