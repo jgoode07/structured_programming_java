@@ -25,6 +25,12 @@ public class DiscountSystem {
                 discountRate = 0.20;
                 break;
         }
+
+        System.out.print("Please enter the price of the item you'd like discounted: $");
+        double price = scnr.nextDouble();  
+        
+        double finalPrice = price - (price * discountRate);
+        System.out.printf("Final price after discount: $%.2f%n", finalPrice);
     }
 }
 
