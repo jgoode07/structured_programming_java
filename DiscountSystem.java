@@ -15,11 +15,12 @@ public class DiscountSystem {
         Scanner scnr = new Scanner(System.in);
 
         System.out.println("Welcome to the Employee Discount Calculator!");
-        System.out.println("Please enter your job title: ");
+        System.out.print("Please enter your job title: ");
         String jobTitle = scnr.nextLine();
 
         if (jobTitle.equalsIgnoreCase("manager")) {
             System.out.println("Managers cannot receive discounts.");
+            scnr.close();
             return;    
         }
         double discountRate = 0.0;
@@ -40,6 +41,8 @@ public class DiscountSystem {
         
         double finalPrice = price - (price * discountRate);
         System.out.printf("Final price after discount: $%.2f%n", finalPrice);
+
+        scnr.close();
     }
 }
 
