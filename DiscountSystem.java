@@ -19,7 +19,7 @@ public class DiscountSystem {
         String jobTitle = scnr.nextLine();
 
         if (jobTitle.equalsIgnoreCase("manager")) {
-            System.out.println("Managers cannot receive discounts.");
+            System.out.println("Managers cannot participate in the discount system.");
             scnr.close();
             return;    
         }
